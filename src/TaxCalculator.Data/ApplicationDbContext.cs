@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TaxCalculator.Core.Domain;
 
 namespace TaxCalculator.Data
 {
@@ -9,5 +10,9 @@ namespace TaxCalculator.Data
         {
         }
 
+        public DbSet<TaxRule> TaxRules { get; set; }
+        public DbSet<DeductionRule> DeductionRules { get; set; }
+        public DbSet<TaxPayer> TaxPayers { get; set; }
+        public DbSet<Deductable> Deductables { get; set; }
     }
 }
