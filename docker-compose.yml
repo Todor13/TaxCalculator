@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+  taxcalculator_web:
+    build: .
+    container_name: taxcalculator
+    ports:
+      - "8080:80"
